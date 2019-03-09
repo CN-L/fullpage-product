@@ -1,4 +1,50 @@
+/* 第一屏 */
 .section1{
+    /* 背景 不平埔 水平居中 垂直靠下 */
     background: url("../images/section-1-bg.png") no-repeat center bottom;
+    /* 设置背景颜色 */
     background-color: #f9dd67;
+}
+/* 第一屏下第一个图片 */
+.section1 .e1 {
+   width: 470px;
+   height: 50px;
+   background: url('../images/section-1-e1.png') no-repeat;
+   position: absolute;
+   /* 适配不同屏幕宽度 使用百分比 */
+   left: 50%;
+   /* 因为图片高度是固定值，因此为了适应不同屏幕宽度 */
+   /* alternate让元素从目标点运动回初始点 */
+   /* infinite 让动画无限制次数*/
+   bottom: 500px;
+   animation: upAndDown 1.4s linear alternate infinite;
+}
+/* 第一屏沙发图 */
+.section1 .e2{
+    width: 134px;
+    height: 147px;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    bottom: 330px;
+    background: url("../images/section-1-e2.png") no-repeat;
+    animation: upAndDown 2.2s linear alternate infinite;
+}
+.section1 .e3{
+    width: 824px;
+    height: 274px;
+    position: absolute;
+    left: 50%;
+    margin-left: -402px;
+    bottom: 200px;
+    background: url("../images/section-1-e3.png") no-repeat;
+}
+@keyframes upAndDown {
+    from{
+        /* 如果用top或者bottom是绝对定位，相当于从页面最顶部或底部开始做动画 */
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100px)
+    }
 }

@@ -1,3 +1,6 @@
 $(function(){
-    $('#dowebok').fullpage();
+    $('#dowebok').fullpage({
+        "navigation":"true",
+        "css3":"true"
+    });
 });
