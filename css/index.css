@@ -71,8 +71,10 @@
     left: 50%;
     margin-left: 400px;
     bottom: 300px;
+    opacity: 0;
     /* margin-left: -110px; */
 }
+/* 第二屏沙发二字 */
 .section2 .e4{
     width: 68px;
     height: 32px;
@@ -83,6 +85,7 @@
     opacity: 0;
 }
 /* 第二屏八个沙发图 */
+/* 图片跟背景图片的区别是背景图片可以等比宽高 */
 .section2 .e6{
     position: absolute;
     /* 因为右侧的点是固定的,因此使用right定位 */
@@ -90,6 +93,7 @@
     bottom: 210px;
     margin-right: -220px;
     height: 0;
+    opacity: 0;
 }
 @keyframes upAndDown {
     from{
