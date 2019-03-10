@@ -30,6 +30,7 @@
     background: url("../images/section-1-e2.png") no-repeat;
     animation: upAndDown 2.2s linear alternate infinite;
 }
+/* 第一屏不动图 */
 .section1 .e3{
     width: 824px;
     height: 274px;
@@ -38,6 +39,57 @@
     margin-left: -402px;
     bottom: 200px;
     background: url("../images/section-1-e3.png") no-repeat;
+}
+/* 第二屏背景图 */
+.section2{
+    /* 背景 不平埔 水平居中 垂直靠下 */
+    background: url("../images/section-2-bg.png") no-repeat center bottom; 
+    background-color: #84a2d4;
+}
+/* 第二屏文字图 */
+.section2 .common{
+    height: 27px;
+    width: 363px;
+    transform: translate(-50%);
+    position: absolute;
+    left: 50%;
+    bottom: 540px;
+}
+.section2 .e1{
+    background: url('../images/section-2-e1.png') no-repeat center;
+}
+.section2 .e2{
+   background: url('../images/section-2-e2.png') no-repeat; 
+   opacity: 0;
+}
+/* 第二屏搜索图片 */
+.section2 .e3{
+    background: url('../images/section-2-e3.png') no-repeat;
+    position: absolute;
+    width: 222px;
+    height: 45px;
+    left: 50%;
+    margin-left: 400px;
+    bottom: 300px;
+    /* margin-left: -110px; */
+}
+.section2 .e4{
+    width: 68px;
+    height: 32px;
+    background: url('../images/section-2-e4.png');
+    position: absolute;
+    top: 5px;
+    left: 130px;
+    opacity: 0;
+}
+/* 第二屏八个沙发图 */
+.section2 .e6{
+    position: absolute;
+    /* 因为右侧的点是固定的,因此使用right定位 */
+    right: 50%;
+    bottom: 210px;
+    margin-right: -220px;
+    height: 0;
 }
 @keyframes upAndDown {
     from{
