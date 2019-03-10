@@ -49,9 +49,7 @@ $(function(){
                     // 让第三屏选中状态展示 且并集选择器 
                   $('.section3').find('.e3, .e5').animate({
                       opacity:1
-                  },600,function(){
-                      $()
-                  })
+                  },600)
                 })
             }
         }
