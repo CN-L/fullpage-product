@@ -101,6 +101,14 @@
   margin-right: -220px;
   height: 0;
 }
+.section2 .e7{
+    position: absolute;
+    left: 50%;
+    bottom: 335px;
+    width: 100px;
+    height: 88px;
+    margin-left: -106px;
+}
 @keyframes upAndDown {
     from{
         /* 如果用top或者bottom是绝对定位，相当于从页面最顶部或底部开始做动画 */
@@ -109,4 +117,44 @@
     to {
       transform: translateY(-100px)
     }
+}
+.section3{
+    background: rgb(239,103,77)
+}
+.section3 .main {
+    width: 990px;
+    height: 600px;
+    background: url('../images/section-3-e1.png') no-repeat;
+    position: absolute;
+    left: 50%;
+    margin-left: -560px;
+    bottom:0;
+}
+.section3 .common {
+   width: 296px;
+   height: 131px;
+   position: absolute;
+   left:536px;
+   bottom: 168px; 
+}
+.section3 .e2{
+    background: url(../images/section-3-e2.gif) no-repeat;
+}
+.section3 .e3{
+    background: url(../images/section-3-e3.gif) no-repeat;
+    opacity: 0;
+}
+.section3 .cartBtn{
+    position: absolute;
+    width: 218px;
+    height: 58px;
+    bottom: 112px;
+    left: 530px;
+}
+.section3 .e4{
+    background: url(../images/section-3-e4.gif) no-repeat;
+}
+.section3 .e5{
+    background: url(../images/section-3-e5.gif) no-repeat;
+    opacity: 0;
 }
