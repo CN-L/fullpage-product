@@ -103,10 +103,14 @@
 }
 .section2 .e7{
     position: absolute;
+    /* opacity 也可以使图片隐藏 */
+    display: none;
     left: 50%;
     bottom: 335px;
-    width: 100px;
+    /* width: 100px; */
     height: 88px;
+    /* 因为棕色沙发图的层级不够 所以掉下来不显示,被section3的内容遮盖住了  */
+    z-index: 10;
     margin-left: -106px;
 }
 @keyframes upAndDown {

@@ -37,6 +37,21 @@ $(function(){
                 );
                
             }
+            if(nextIndex == 3 && direction == "down"){
+                // 棕色沙发显示并且移动 下滑到第三屏
+                $('.section2').find('.e7').show().animate({
+                //   下滑到指定位置
+                  bottom: -$(window).height()+250,
+                  marginLeft:-295,
+                //   高度变化
+                  height:166
+                },1000,'linear',function(){
+                    // 让第三屏选中状态展示
+                  $('.section3').find('.e3,e5').animate({
+                      opacity:1
+                  },600)
+                })
+            }
         }
     });
 });
