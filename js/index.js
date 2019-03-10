@@ -11,9 +11,28 @@ $(function(){
                     marginLeft:"-110",
                     opacity:1
                 },1000,'linear',function(){
+                    // 沙发两个字显示
                   $('.section2').find('.e4').animate({
                       opacity: 1
-                  },1000,'linear')
+                  },800,'linear',function(){
+                    //搜索框原图隐藏
+                    $('.section2').find('.e3').hide();
+                    //搜索框的替代图片显示且移动到右上角
+                    $('.section2').find('.e5').show().animate({
+                        marginLeft:"110px",
+                        bottom:"450px",
+                        height: "30px"
+                    },400,"linear");
+                    // 让八个沙发图显示出来
+                    $('.section2').find('.e6').animate({
+                        height:"218px"
+                    },1000)
+                    // 同时让顶部白色的字显示出来
+                    $('.section2').find('.e2').animate({
+                        // 注意  show()和hide()方法只能更改display属性,不能应用于opactity
+                        opacity:'1',
+                    })
+                  })
                 }
                 );
                
