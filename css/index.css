@@ -113,6 +113,18 @@
     z-index: 10;
     margin-left: -106px;
 }
+/* 白色遮罩层 */
+.section2 .e8{
+    position: absolute;
+    background: red;
+    display: none;
+    height: 101px;
+    width: 101px;
+    left: 50%;
+    margin-left: -106px;
+    z-index: 5;
+    bottom:325px;
+}
 @keyframes upAndDown {
     from{
         /* 如果用top或者bottom是绝对定位，相当于从页面最顶部或底部开始做动画 */
