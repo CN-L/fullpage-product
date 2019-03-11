@@ -173,3 +173,8 @@
     background: url(../images/section-3-e5.gif) no-repeat;
     opacity: 0;
 }
+/* 第四屏 */
+.section4{
+    
+    background-color: #ffeedd;background: url('../images/section-4-bg.png') no-repeat center bottom;
+}
