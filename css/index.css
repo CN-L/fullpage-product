@@ -135,7 +135,8 @@
     bottom:0;
 }
 .section3{
-    background: rgb(239,103,77)
+    background: rgb(239,103,77);
+    z-index: 9;
 }
 .section3 .common {
    width: 296px;
@@ -157,6 +158,13 @@
     height: 58px;
     bottom: 100px;
     left: 530px;
+}
+.section3 .sofa{
+    position: absolute;
+    bottom: 238px;
+    left: 50%;
+    margin-left: -293px;
+    display: none;
 }
 .section3 .e4{
     background: url(../images/section-3-e4.gif) no-repeat;
@@ -187,13 +195,14 @@
   bottom: 450px;
 }
 .section4 .e3{
- opacity: 0;
+ display: none;
 }
 .section4 .e4{
     position: absolute;
     left: 50%;
     margin-left: -204px;
     bottom: 60px;
+    z-index: 11;
 }
 .section4 .e6{
     position: absolute;
@@ -210,6 +219,14 @@
     left: 62px;
     bottom: 162px;
     
+}
+.section4 .sofa{
+    position: absolute;
+    bottom: 210px;
+    left: 50%;
+    margin-left: -50px;
+    display: none;
+    z-index: -1;
 }
 /* 第一屏循环动画 */
 @keyframes upAndDown {

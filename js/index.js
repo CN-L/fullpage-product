@@ -31,12 +31,13 @@ $(function(){
                     $('.section2').find('.e2').animate({
                         // 注意  show()和hide()方法只能更改display属性,不能应用于opactity
                         opacity:'1',
-                    })
+                    }) 
                   })
                 }
                 );
                
             }
+            //下滑为第三屏时
             if(nextIndex == 3 && direction == "down"){
                 // 棕色沙发显示并且移动 下滑到第三屏
                 $('.section2').find('.e7').show().animate({
@@ -52,6 +53,31 @@ $(function(){
                   },600)
                 })
                 $('.section2').find('.e8').show()
+            }
+            if(nextIndex == 4 && direction == "down"){
+                $('.section2').find('.e7').hide();
+                $('.section3').find('.sofa').show().animate({
+                    bottom:-$(window).height() + 270,
+                    marginLeft: "-50px"
+                },1000,"linear",function(){
+                    // 让掉落的沙发隐藏 代替图片显示
+                    $(this).hide();
+                    $('.section4').find('.sofa').show();
+                    // 小车飞出屏幕外
+                    $('.section4').find('.e4').animate({
+                        marginLeft:999
+                    },1000,"linear",function(){
+                        // 地址显示
+                        $('.section4').find('.e6').animate({
+                            opacity:1
+                        },1000,function(){
+                                $('.section4').find('.e7').animate({
+                                    opacity:1
+                                },1000)
+                            })
+                            $('.section4').find('.e3').fadeIn()
+                    })
+                })
             }
         }
     });
