@@ -124,18 +124,7 @@
     bottom:325px;
     display: none;
 }
-@keyframes upAndDown {
-    from{
-        /* 如果用top或者bottom是绝对定位，相当于从页面最顶部或底部开始做动画 */
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(-100px)
-    }
-}
-.section3{
-    background: rgb(239,103,77)
-}
+
 .section3 .main {
     width: 990px;
     height: 600px;
@@ -144,6 +133,9 @@
     left: 50%;
     margin-left: -560px;
     bottom:0;
+}
+.section3{
+    background: rgb(239,103,77)
 }
 .section3 .common {
    width: 296px;
@@ -173,7 +165,68 @@
     background: url(../images/section-3-e5.gif) no-repeat;
     opacity: 0;
 }
-/* 第四屏 */
+/* 第四屏背景图 */
 .section4{
     background:rgb(255, 238, 221) url('../images/section-4-bg.png') no-repeat center bottom;
+}
+/* 第四屏云彩背景图 */
+.section4 .e1{
+    background: url(../images/section-4-e1.png) no-repeat;
+    position: absolute;
+    height: 120px;
+    width: 880px;
+    left: 50%;
+    margin-left: -440px;
+    bottom: 530px;
+    animation: leftAndRight 20s linear alternate infinite ;
+}
+.section4 .common{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 450px;
+}
+.section4 .e3{
+ opacity: 0;
+}
+.section4 .e4{
+    position: absolute;
+    left: 50%;
+    margin-left: -204px;
+    bottom: 60px;
+}
+.section4 .e6{
+    position: absolute;
+    width: 283px;
+    background: url(../images/section-4-e6.png) no-repeat;
+    left: 50%;
+    height: 270px;
+    bottom: 130px;
+   transform: translateX(-50%);
+   opacity: 0;
+}
+.section4 .e7{
+    position: absolute;
+    left: 62px;
+    bottom: 162px;
+    
+}
+/* 第一屏循环动画 */
+@keyframes upAndDown {
+    from{
+        /* 如果用top或者bottom是绝对定位，相当于从页面最顶部或底部开始做动画 */
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100px)
+    }
+}
+/* 第四屏云彩循环动画 */
+@keyframes leftAndRight {
+    from{
+        transform: translateX(0)
+    }
+    to{
+       transform: translateX(300px)
+    }
 }

@@ -26,7 +26,7 @@ $(function(){
                     // 让八个沙发图显示出来
                     $('.section2').find('.e6').animate({
                         height:"218px"
-                    },1000)
+                    },800)
                     // 同时让顶部白色的字显示出来
                     $('.section2').find('.e2').animate({
                         // 注意  show()和hide()方法只能更改display属性,不能应用于opactity
