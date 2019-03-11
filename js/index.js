@@ -51,6 +51,7 @@ $(function(){
                       opacity:1
                   },600)
                 })
+                $('.section2').find('.e8').show()
             }
         }
     });

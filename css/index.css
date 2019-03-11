@@ -116,14 +116,13 @@
 /* 白色遮罩层 */
 .section2 .e8{
     position: absolute;
-    background: red;
-    display: none;
+    background: #fff;
     height: 101px;
     width: 101px;
     left: 50%;
     margin-left: -106px;
-    z-index: 5;
     bottom:325px;
+    display: none;
 }
 @keyframes upAndDown {
     from{
