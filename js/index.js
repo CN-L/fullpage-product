@@ -70,11 +70,13 @@ $(function(){
                         // 地址显示
                         $('.section4').find('.e6').animate({
                             opacity:1
-                        },1000,function(){
+                        },600,function(){
+                            // 地址上文字显示
                                 $('.section4').find('.e7').animate({
-                                    opacity:1
-                                },1000)
+                                    opacity:1,
+                                },400)
                             })
+                            // 提示文字显示
                             $('.section4').find('.e3').fadeIn()
                     })
                 })
