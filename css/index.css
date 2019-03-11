@@ -175,6 +175,5 @@
 }
 /* 第四屏 */
 .section4{
-    background: url('../images/section-4-bg.png') no-repeat center bottom;
-    background-color: #ffeedd;
+    background:rgb(255, 238, 221) url('../images/section-4-bg.png') no-repeat center bottom;
 }
