@@ -136,12 +136,12 @@ $(function(){
                             },function(){
                                 // 开门
                                 $('.section6').find('.e7').show()
-                                // 显示请收货
-                                $('.section6').find('.e9').show()
                                  // 送货已经完成
                                 $('.section6').find('.e3').animate({
                                     opacity:1
                                 })
+                                // 显示请收货
+                                $('.section6').find('.e9').show()
                                 // 女孩出现
                                 $('.section6').find('.e8').animate({
                                     height:294
