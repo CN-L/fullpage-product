@@ -246,17 +246,19 @@
     margin-left: -600px;
     bottom: 200px;
 }
+/* 354 */
 .section5 .e3{
     position: absolute;
     left: 50%;
     margin-left: -490px;
-    bottom: 354px;
+    bottom: 260px;
 }
+/* 90 */
 .section5 .sofa {
     position: absolute;
     left: 50%;
     margin-left: -533px;
-    bottom: 90px;
+    bottom:170px;
 }
 .section5 .common {
     position: absolute;
@@ -268,13 +270,13 @@
 
 }
 .section5 .e5{
-
+  display: none;
 }
 .section5 .e6{
    position: absolute;
    left: 50%;
    margin-left: 100px;
-   bottom: 0;
+   bottom: -375px;
 }
 /* 子绝父相才能使父盒子溢出隐藏 */
 .section5 .box {

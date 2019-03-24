@@ -88,7 +88,17 @@ $(function(){
             }
             // 第五屏
             if(nextIndex == 5 && direction == "down"){
-                
+                $('.section5').find('.e3').animate({
+                    bottom:354
+                },1000)
+                $('.section5').find('.sofa').animate({
+                    bottom:90
+                },1000)
+                $('.section5').find('.e6').animate({
+                    bottom:0
+                },1000,function(){
+                    $('.section5').find('.e5').show()
+                })
             }
         }
     });
