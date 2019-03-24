@@ -1,7 +1,11 @@
 $(function(){
+    let promise = new Promise(function(resolve, reject){
+
+    });
     $('#dowebok').fullpage({
         "navigation":"true",
         "css3":"true",
+        
         // fullpage插件提供的api
         onLeave(index,nextIndex, direction){
             // 当下一屏为2且向下滑时
@@ -54,6 +58,7 @@ $(function(){
                 })
                 $('.section2').find('.e8').show()
             }
+            // 第四屏
             if(nextIndex == 4 && direction == "down"){
                 $('.section2').find('.e7').hide();
                 $('.section3').find('.sofa').show().animate({
@@ -80,6 +85,10 @@ $(function(){
                             $('.section4').find('.e3').fadeIn()
                     })
                 })
+            }
+            // 第五屏
+            if(nextIndex == 5 && direction == "down"){
+                
             }
         }
     });

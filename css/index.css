@@ -175,6 +175,7 @@
 }
 /* 第四屏背景图 */
 .section4{
+    /* z-index: 1; */
     background:rgb(255, 238, 221) url('../images/section-4-bg.png') no-repeat center bottom;
 }
 /* 第四屏云彩背景图 */
@@ -228,6 +229,59 @@
     margin-left: -50px;
     display: none;
     z-index: -1;
+}
+/* 第五屏 */
+.section5{
+    background: url('../images/section-5-bg.png')
+}
+.section5 .e1{
+ position: absolute;
+ left: 50%;
+ margin-left: -660px;
+ bottom: 550px;
+}
+.section5 .e2{
+    position: absolute;
+    left: 50%;
+    margin-left: -600px;
+    bottom: 200px;
+}
+.section5 .e3{
+    position: absolute;
+    left: 50%;
+    margin-left: -490px;
+    bottom: 354px;
+}
+.section5 .sofa {
+    position: absolute;
+    left: 50%;
+    margin-left: -533px;
+    bottom: 90px;
+}
+.section5 .common {
+    position: absolute;
+    left:50%;
+    margin-left: 112px;
+    bottom: 240px;
+}
+.section5 .e4{
+
+}
+.section5 .e5{
+
+}
+.section5 .e6{
+   position: absolute;
+   left: 50%;
+   margin-left: 100px;
+   bottom: 0;
+}
+/* 子绝父相才能使父盒子溢出隐藏 */
+.section5 .box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 /* 第一屏循环动画 */
 @keyframes upAndDown {
