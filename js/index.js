@@ -100,6 +100,64 @@ $(function(){
                     $('.section5').find('.e5').show()
                 })
             }
+            // 第六屏
+            if(nextIndex == 6 && direction == "down"){
+                // 盒子运动接住沙发
+                $('.section6').find('.e1').animate({
+                    opacity:1,
+                    marginLeft:-300
+                },1000)
+                // 沙发从上一屏掉到盒子里
+                $('.section5').find('.sofa').animate({
+                    bottom:-$(window).height()+390,
+                    height:80,
+                    marginLeft:-280,
+                },1000,function(){
+                    // 隐藏沙发
+                    $(this).hide();
+                    // 盒子开始掉进车里
+                    $('.section6').find('.e1').animate({
+                        bottom:30
+                    },500,function(){
+                        //背景移动
+                        $('.section6').animate({
+                            backgroundPositionX:-1050
+                        },1000,'linear',function(){
+                            //让送货人送货
+                            $('.section6').find('.e6')
+                            .animate({
+                                height:305
+                            })
+                            .animate({
+                                bottom:112
+                            })
+                            .animate({
+                                marginLeft:42
+                            },function(){
+                                // 开门
+                                $('.section6').find('.e7').show()
+                                // 显示请收货
+                                $('.section6').find('.e9').show()
+                                 // 送货已经完成
+                                $('.section6').find('.e3').animate({
+                                    opacity:1
+                                })
+                                // 女孩出现
+                                $('.section6').find('.e8').animate({
+                                    height:294
+                                },1000)
+                            })
+                        })
+                        //让送货提示的文字显示
+                        $('.section6').find('.e2').animate({
+                            opacity:1
+                        })
+                        //让送货地址显示
+                        $('.section6').find('.e5').show()
+
+                    })
+                })
+            }
         }
     });
 });
