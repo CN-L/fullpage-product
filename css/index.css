@@ -356,6 +356,25 @@
     bottom: 430px;
     display: none;
 }
+.section7{
+    background: url(../images/section-7-bg.png) center bottom no-repeat;
+}
+.section7 .e1{
+    width:0;
+    position: absolute;
+    height: 14px;
+    left: 50%;
+    margin-left: -294px;
+    bottom: 444px;
+    background: url(../images/section-7-e1.png) no-repeat;
+}
+.section7 .e2{
+    position: absolute;
+    left: 50%;
+    margin-left: -73px;
+    bottom: 394px;
+    opacity: 0;
+}
 /* 第一屏循环动画 */
 @keyframes upAndDown {
     from{
