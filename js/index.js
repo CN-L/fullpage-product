@@ -71,7 +71,7 @@ $(function(){
                     // 小车飞出屏幕外
                     $('.section4').find('.e4').animate({
                         marginLeft:999
-                    },1000,"linear",function(){
+                    },1000,"easeInExpo",function(){
                         // 地址显示
                         $('.section4').find('.e6').animate({
                             opacity:1
@@ -123,6 +123,12 @@ $(function(){
                         $('.section6').animate({
                             backgroundPositionX:-1050
                         },1000,'linear',function(){
+                             //让送货提示的文字显示
+                            $('.section6').find('.e2').animate({
+                                opacity:1
+                            })
+                            //让送货地址显示
+                            $('.section6').find('.e5').show()
                             //让送货人送货
                             $('.section6').find('.e6')
                             .animate({
@@ -148,12 +154,6 @@ $(function(){
                                 },1000)
                             })
                         })
-                        //让送货提示的文字显示
-                        $('.section6').find('.e2').animate({
-                            opacity:1
-                        })
-                        //让送货地址显示
-                        $('.section6').find('.e5').show()
 
                     })
                 })
