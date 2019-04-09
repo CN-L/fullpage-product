@@ -158,6 +158,18 @@ $(function(){
                     })
                 })
             }
+            //第七屏
+            if(nextIndex == 7 && direction == "down"){
+                // 五星好评 delay延迟执行 毫秒为单位
+                $('.section7').find('.e1').delay(1000).animate({
+                    width:96,
+                },1000)
+                // 好评来袭
+                $('.section7').find('.e2').delay(1000).animate({
+                      marginLeft:-280,
+                      opacity:1
+                },1000)
+            }
         }
     });
 });
