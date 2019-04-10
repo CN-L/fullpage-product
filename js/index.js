@@ -172,4 +172,20 @@ $(function(){
             }
         }
     });
+    // 鼠标移动 第八屏
+    $('.section8').on('mousemove',function(e){
+        // 获取鼠标距离屏幕左侧和顶部的距离
+        var pageX = e.pageX;//左侧
+        var pageY = e.pageY;//顶部
+        // 最大高度是浏览器窗口高度 - 自身高度
+        //计算向上最大的移动范围
+        var maxTop = $(window).height() - $('.hand').height();
+        if( pageY< maxTop ){
+            pageY =  maxTop
+        }
+        $('.hand').css({
+            left:pageX,
+            top:pageY +10
+        })     
+    })
 });
