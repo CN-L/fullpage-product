@@ -375,6 +375,42 @@
     bottom: 394px;
     opacity: 0;
 }
+/* 第八屏 */
+.section8{
+    background: url(../images/section-8-bg.png) center bottom
+}
+.section8 .startBtn{
+    width: 389px;
+    height: 160px;
+    background: url(../images/section-8-e1.png) no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    /* 手形 */
+    cursor: pointer;
+}
+/* gif隐藏 */
+.section8 .startBtn img{
+    display: none;
+}
+/* 悬停显示gif */
+.section8 .startBtn:hover img{
+    display: block;
+}
+.section8 .e3{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: 300px;
+    margin-top: -30px;
+    cursor: pointer;
+}
+.section8 .e4{
+    position: absolute;
+    top: 0;
+    left: -999px;
+}
 /* 第一屏循环动画 */
 @keyframes upAndDown {
     from{
