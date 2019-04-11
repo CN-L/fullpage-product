@@ -185,7 +185,7 @@ $(function () {
             //第七屏
             if (nextIndex == 7 && direction == "down") {
                 if ($('.section7').data('flag') == false) {
-                    $('.section7').data('flag',true)
+                    $('.section7').data('flag', true)
                     // 五星好评 delay延迟执行 毫秒为单位
                     $('.section7').find('.e1').delay(1000).animate({
                         width: 96,
@@ -202,8 +202,8 @@ $(function () {
     });
     // 鼠标移动 第八屏
     $('.section8').on('mousemove', function (e) {
-        if ($('.section8').data('flag')==false) {
-            $('.section58').data('flag',true)
+        if ($('.section8').data('flag') == false) {
+            $('.section58').data('flag', true)
             // 获取鼠标距离屏幕左侧和顶部的距离
             var pageX = e.pageX;//左侧
             var pageY = e.pageY;//顶部
@@ -216,6 +216,21 @@ $(function () {
             $('.hand').css({
                 left: pageX,
                 top: pageY + 10
+            })
+            // 点击再来一次
+            $('#align').on('click', function () {
+                // if($('img').is(':animated') == false){
+                // 跳转第一屏
+                $.fn.fullpage.moveTo(1);
+                // 动画停止执行
+                //开锁
+                $('.section').data('flag', false)
+                // 删除行内样式 以便动画重新执行
+                $('.section img, .section div').attr('style', '');
+                // 处理第六屏背景位置
+                $('.section6').css('backgroundPositionX',-200)
+            // }
+                
             })
         }
 
