@@ -411,6 +411,25 @@
     top: 0;
     left: -999px;
 }
+.enter{
+    position: fixed;
+    width: 101px;
+    height: 101px;
+    background: url(../images/enter.png) no-repeat;
+    right: 20px;
+    top: 20px;
+    z-index: 10;
+}
+.moveDown{
+    height: 71px;
+    width: 164px;
+    background: url(../images/goon.png) no-repeat;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 5;
+    animation: upAndDown linear 1.5s alternate infinite
+}
 /* 第一屏循环动画 */
 @keyframes upAndDown {
     from{

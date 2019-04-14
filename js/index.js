@@ -198,6 +198,12 @@ $(function () {
                 }
 
             }
+            //如果是第八屏，往下滑的动画会消失
+            if(nextIndex == 8){
+                $('.moveDown').hide()
+            }else{
+                $('.moveDown').show()//下一屏不为8，显示出来
+            }
         }
     });
     // 鼠标移动 第八屏
@@ -217,22 +223,24 @@ $(function () {
                 left: pageX,
                 top: pageY + 10
             })
-            // 点击再来一次
-            $('#align').on('click', function () {
-                // if($('img').is(':animated') == false){
-                // 跳转第一屏
-                $.fn.fullpage.moveTo(1);
-                // 动画停止执行
-                //开锁
-                $('.section').data('flag', false)
-                // 删除行内样式 以便动画重新执行
-                $('.section img, .section div').attr('style', '');
-                // 处理第六屏背景位置
-                $('.section6').css('backgroundPositionX',-200)
-            // }
-                
-            })
         }
 
+    })
+     // 点击再来一次
+     $('#align').on('click', function () {
+        // if($('img').is(':animated') == false){
+        // 跳转第一屏
+        $.fn.fullpage.moveTo(1);
+        // 动画停止执行
+        //开锁
+        $('.section').data('flag', false)
+        // 删除行内样式 以便动画重新执行
+        $('.section img, .section div').attr('style', '');
+        // 处理第六屏背景位置
+        $('.section6').css('backgroundPositionX',-200)
+        
+    })
+    $('.moveDown').on('click',function(){
+        $.fn.fullpage.moveSectionDown() //继续往下滑 更多精彩
     })
 });
