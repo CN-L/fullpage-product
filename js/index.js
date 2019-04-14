@@ -228,7 +228,7 @@ $(function () {
     })
      // 点击再来一次
      $('#align').on('click', function () {
-        // if($('img').is(':animated') == false){
+        $('.section').stop();
         // 跳转第一屏
         $.fn.fullpage.moveTo(1);
         // 动画停止执行
